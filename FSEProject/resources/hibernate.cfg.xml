@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+ 
+<hibernate-configuration>
+    <session-factory>
+        
+ 		<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+		<property name="hibernate.connection.url">jdbc:postgresql://baasu.db.elephantsql.com:5432/utfjqwyf</property>
+		<property name="hibernate.connection.username">utfjqwyf</property>
+		<property name="hibernate.connection.password">r_2DjWnOV2U15r7oId1a503NFQOEERM6</property>
+		<property name="connection_pool_size">5</property>
+		<property name="show_sql">true</property>
+        <!-- Mapping With Model Class Containing Annotations -->
+        <mapping class="com.fse.pojo.Parent" />
+        <mapping class="com.fse.pojo.Project" />
+        <mapping class="com.fse.pojo.Task" />
+        <mapping class="com.fse.pojo.Users" />
+        
+    </session-factory>
+</hibernate-configuration>
