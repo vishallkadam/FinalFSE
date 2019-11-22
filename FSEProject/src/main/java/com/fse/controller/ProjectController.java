@@ -35,7 +35,7 @@ public class ProjectController {
 	@GetMapping
 	public List<Project> getProjects(){
 		System.out.println("In Project get method ----------------------------");
-		List<Project> projectList = new ArrayList<Project>();
+		/*List<Project> projectList = new ArrayList<Project>();
 		Project p = new Project();
 		p.setProjectId(1);
 		p.setProjectName("TestProject");
@@ -55,8 +55,8 @@ public class ProjectController {
 		p.setEmployeeId(12);
 		projectList.add(p);
 		
-		return projectList;
-		//return projectService.getProjects();
+		return projectList;*/
+		return projectService.getProjects();
 	}
 	
 	@PutMapping
